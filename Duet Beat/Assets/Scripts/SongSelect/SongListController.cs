@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Gameplay;
+using SongSelect;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -68,7 +70,7 @@ namespace DuetBeat.SongSelect
 
         private void OnItemPlay(SongListItemView item)
         {
-            Debug.Log($"[SongSelect] Play requested: {item.Data.name} ({item.Data.id})");
+            GameplayScreenController.Instance.StartSong(item.Data, transform.root.gameObject);
         }
 
         private void PlayPreview(SongEntry entry)

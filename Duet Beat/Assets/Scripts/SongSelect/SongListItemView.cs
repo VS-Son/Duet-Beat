@@ -1,9 +1,10 @@
 using System;
+using DuetBeat.SongSelect;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace DuetBeat.SongSelect
+namespace SongSelect
 {
     public class SongListItemView : MonoBehaviour
     {
